@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class bbWP2UTF8</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class bbWP2UTF8</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">bbWP2UTF8 is a class/plugin which strives to convert wordpress / wordpress mu database content in whatever character set to utf8</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bjorn Wijers</li>
+				<li><span class="field">version:</span> $Id$</li>
+				<li><span class="field">copyright:</span> Bjorn Wijers / VPRO Digitaal</li>
+				<li><span class="field">license:</span> <a href="http://opensource.org/licenses/gpl-license.php">GNU Public License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_bbWP2UTF8.php.html">/bbWP2UTF8.php</a> (line <span class="field"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a37">37</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																								<div class="var-title">
+					<span class="var-type">object reference</span>
+					<a href="#$_wpdb" title="details" class="var-name">$_wpdb</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																														
+				<div class="method-definition">
+											<span class="method-result">bbWP2UTF8</span>
+										<a href="#bbWP2UTF8" title="details" class="method-name">bbWP2UTF8</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#convertDatabase2UTF8" title="details" class="method-name">convertDatabase2UTF8</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$collation</span> = <span class="var-default">'utf8_general_ci'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#convertTable2UTF8" title="details" class="method-name">convertTable2UTF8</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$collation</span> = <span class="var-default">'utf8_general_ci'</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isColumnCharSetBinary" title="details" class="method-name">isColumnCharSetBinary</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$column_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isWPMU" title="details" class="method-name">isWPMU</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#showCurrentDatabaseCharacterSet" title="details" class="method-name">showCurrentDatabaseCharacterSet</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#showInterface" title="details" class="method-name">showInterface</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_addToMenu" title="details" class="method-name">_addToMenu</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_binarizeTableColumn" title="details" class="method-name">_binarizeTableColumn</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_createTablesList" title="details" class="method-name">_createTablesList</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$tables</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$useCheckboxes</span> = <span class="var-default">TRUE</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_deBinarizeTableColumn" title="details" class="method-name">_deBinarizeTableColumn</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_getAllTables" title="details" class="method-name">_getAllTables</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_getColumnCharacterSet" title="details" class="method-name">_getColumnCharacterSet</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$column_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_getTableCollation" title="details" class="method-name">_getTableCollation</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_getTableColumns" title="details" class="method-name">_getTableColumns</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#_processColumnInfo" title="details" class="method-name">_processColumnInfo</a>
+											(<span class="var-type">object column</span>&nbsp;<span class="var-name">$column</span>)
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_setupClassVars" title="details" class="method-name">_setupClassVars</a>
+										()
+									</div>
+														
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_setWPHooks" title="details" class="method-name">_setWPHooks</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_wpdb" id="$_wpdb"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">object reference</span>
+			<span class="var-name">$_wpdb</span>
+						(line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">reference to the wordpress wpdb database object</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> to wpdb</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodbbWP2UTF8" id="bbWP2UTF8"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor bbWP2UTF8</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a55">55</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor (backwards compatible with php4..)  Calls the _setClassVars function to set the class variables  and calls the _setWPHooks in order to set the appropriate hooks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bbWP2UTF8</span>
+		<span class="method-name">
+			bbWP2UTF8
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodconvertDatabase2UTF8" id="convertDatabase2UTF8"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">convertDatabase2UTF8</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a524">524</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a database's character set to utf8</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the performed query</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			convertDatabase2UTF8
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$collation</span> = <span class="var-default">'utf8_general_ci'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$database_name</span><span class="var-description">: database name; Optional defaults to DB_NAME set in wp-config.php</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$collation</span><span class="var-description">: collation; Optional defaults to utf8_general_ci</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconvertTable2UTF8" id="convertTable2UTF8"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">convertTable2UTF8</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a507">507</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a table's character set to utf8</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> the performed query</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			convertTable2UTF8
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$collation</span> = <span class="var-default">'utf8_general_ci'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table_name</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$collation</span><span class="var-description">: collation; Optional defaults to utf8_general_ci</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisColumnCharSetBinary" id="isColumnCharSetBinary"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isColumnCharSetBinary</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a488">488</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if a column's character set is binary or not (wraps _getColumnCharacterSet in it..)</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> FALSE when no info could be retrieved or character set is not binary. TRUE if character set is binary</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isColumnCharSetBinary
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$column_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table_name</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$column_name</span><span class="var-description">: column name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$database_name</span><span class="var-description">: database name; Optional, defaults to DB_NAME set in wp-config.php</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisWPMU" id="isWPMU"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isWPMU</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a551">551</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Checks if we're dealing with Wordpress MU or not by checking the existance of wpmu-settings.php</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> TRUE when its Wordpress MU or FALSE when not</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isWPMU
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshowCurrentDatabaseCharacterSet" id="showCurrentDatabaseCharacterSet"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">showCurrentDatabaseCharacterSet</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a537">537</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieve the current database's character set</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> object with character set or boolean FALSE</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			showCurrentDatabaseCharacterSet
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshowInterface" id="showInterface"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">showInterface</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a104">104</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the interface and handles the different steps of the conversion.</p>
+<p class="description"><p>Basically the core of this plugin  Called by the add_submenu_page hook.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			showInterface
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_addToMenu" id="_addToMenu"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_addToMenu</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a89">89</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sink function for the 'admin_menu' hook</p>
+<p class="description"><p>Makes it easy to add optional pages as a sub-option of the top level menu items</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_addToMenu
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_binarizeTableColumn" id="_binarizeTableColumn"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_binarizeTableColumn</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a283">283</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts a given column's type of a given table to its binary counterpart according to  the list below:</p>
+<p class="description"><p>CHAR -&gt; BINARY   VARCHAR -&gt; VARBINARY   TINYTEXT -&gt; TINYBLOB   TEXT -&gt; BLOB   MEDIUMTEXT -&gt; MEDIUMBLOB   LONGTEXT -&gt; LONGBLOB</p><p>Columns with the type ENUM and SET will be set to character set binary</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> performed query</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_binarizeTableColumn
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table_name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$column</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_createTablesList" id="_createTablesList"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_createTablesList</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a219">219</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Creates a list with all available tables</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> html</li>
+				<li><span class="field">todo:</span> should remove collation function from this function and make part of _getAllTables</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_createTablesList
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$tables</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$useCheckboxes</span> = <span class="var-default">TRUE</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$tables</span><span class="var-description">: tables</span>			</li>
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$useCheckboxes</span><span class="var-description">: useCheckboxes default TRUE; switches checkboxes on/off</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_deBinarizeTableColumn" id="_deBinarizeTableColumn"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_deBinarizeTableColumn</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a362">362</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Converts a given column's binary type of a given table to its previous non-binary type according to  the list below:</p>
+<p class="description"><p>BINARY -&gt; CHAR   VARBINARY -&gt; VARCHAR   TINYBLOB -&gt; TINYTEXT   BLOB -&gt; TEXT   MEDIUMBLOB -&gt; MEDIUMTEXT   LONGBLOB -&gt; LONGTEXT</p><p>Columns with the type ENUM and SET will be set to character set utf8</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> performed query</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_deBinarizeTableColumn
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$column</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table_name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$column</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getAllTables" id="_getAllTables"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getAllTables</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a244">244</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves all tables from database defined by DB_NAME in wp-config.php</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> either an array with tables or a boolean FALSE</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_getAllTables
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_getColumnCharacterSet" id="_getColumnCharacterSet"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getColumnCharacterSet</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a454">454</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves a column's character set</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> string character set or a boolean FALSE when no info could be retrieved</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_getColumnCharacterSet
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$column_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table_name</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$column_name</span><span class="var-description">: column name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$database_name</span><span class="var-description">: database name; Optional, defaults to DB_NAME set in wp-config.php</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getTableCollation" id="_getTableCollation"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getTableCollation</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a471">471</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves a table's collation</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> string collation type or a boolean FALSE when no info could be retrieved</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_getTableCollation
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table_name</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$database_name</span> = <span class="var-default">DB_NAME</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table_name</span><span class="var-description">: table name</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$database_name</span><span class="var-description">: database name; Optional, defaults to DB_NAME set in wp-config.php</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_getTableColumns" id="_getTableColumns"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_getTableColumns</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a259">259</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Retrieves all columns from a given table</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> either an array with columns or a boolean FALSE</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_getTableColumns
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_processColumnInfo" id="_processColumnInfo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_processColumnInfo</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a431">431</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Expects a column object and returns the column type and extra info in an array</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> int -1 when not using the appropriate parameter or an array with column data: $array[0] = column type such as vaechar,  $array[1] = type size info such as 255 or a boolean FALSE when no info could be retrieved</li>
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			_processColumnInfo
+		</span>
+					(<span class="var-type">object column</span>&nbsp;<span class="var-name">$column</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object column</span>
+				<span class="var-name">$column</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_setupClassVars" id="_setupClassVars"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_setupClassVars</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a67">67</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the defaults for the class variables</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_setupClassVars
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="method_setWPHooks" id="_setWPHooks"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_setWPHooks</span> (line <span class="line-number"><a href="../__filesource/fsource_bbWP2UTF8__bbWP2UTF8.php.html#a78">78</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the Wordpress specific filter and action hooks</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_setWPHooks
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 01 Jul 2008 16:28:16 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.2</a>
+	</p>
+	</div></body>
+</html>
